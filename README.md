@@ -33,8 +33,7 @@ huffman-compressor/
 ├── output/
 │
 ├── main.py
-├── README.md
-└── requirements.txt
+└── README.md 
 ```
 
 ---
