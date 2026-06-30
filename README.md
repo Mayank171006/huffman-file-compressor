@@ -58,7 +58,7 @@ huffman-compressor/
 Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/huffman-file-compressor.git
+git clone https://github.com/Mayank171006/huffman-file-compressor.git
 ```
 
 Move into the project directory
