@@ -101,8 +101,9 @@ class HuffmanCoding:
         byte_array = self._get_byte_array(padded_text)
 
         # Create output file path
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         filename = os.path.splitext(os.path.basename(input_path))[0]
-        output_path = rf"huffman-compressor\output\{filename}.bin"
+        output_path = os.path.join(base_dir, "output", f"{filename}.bin")
 
         # Write compressed file
         with open(output_path, "wb") as output:
@@ -185,7 +186,8 @@ class HuffmanCoding:
 
         # Output file path
         filename = os.path.splitext(os.path.basename(input_path))[0]
-        output_path = rf"huffman-compressor\output\{filename}_decoded.txt"
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        output_path = os.path.join(base_dir, "output", f"{filename}_decoded.txt")
 
         with open(output_path, "w", encoding="utf-8") as output:
             output.write(decoded_text)
