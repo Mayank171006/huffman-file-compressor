@@ -5,6 +5,6 @@ class Node:
         self.left=None
         self.right=None
     def __lt__(self, other):
-        if self.frequency != other.frequency:
-            return self.frequency < other.frequency
+        if self.freq != other.freq:
+            return self.freq< other.freq
         return self.char < other.char
